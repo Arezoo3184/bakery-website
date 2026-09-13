@@ -1,0 +1,278 @@
+   • {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+body {
+font-family: Arial, sans-serif;
+background: #fff;
+color: #333;
+}
+
+.cart {
+width: 85%;
+min-height: 280px;
+margin: 60px auto;
+padding: 35px 45px;
+background: #fff;
+border-radius: 6px;
+box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+
+direction: rtl;
+box-sizing: border-box;
+}
+
+/* عنوان سبد خرید */
+
+.cart-title {
+text-align: center;
+color: #4b2595;
+font-size: 24px;
+margin: 0 0 25px;
+font-weight: bold;
+}
+
+/* خط زیر عنوان */
+
+.cart-line {
+width: 85%;
+height: 2px;
+background: #54249b;
+margin: 0 auto 35px;
+}
+
+/* قسمت محصولات */
+
+.cart-items {
+width: 90%;
+margin: auto;
+}
+
+/* هر محصول */
+
+.cart-item {
+width: 100%;
+min-height: 70px;
+
+display: flex;
+align-items: center;
+
+direction: rtl;
+
+border-bottom: 1px solid #eee;
+padding: 15px 0;
+}
+
+/* مهم:
+col-md-4 های بوت‌استرپ را Override می‌کنیم
+*/
+
+.cart-item .col-md-4 {
+width: 33.333%;
+flex: 0 0 33.333%;
+padding: 0 15px;
+box-sizing: border-box;
+}
+
+/* اسم محصول */
+
+.cart-item-title {
+margin: 0;
+font-size: 18px;
+color: #222;
+text-align: right;
+}
+
+/* تعداد */
+
+.qty {
+text-align: center;
+font-size: 18px;
+color: #333;
+}
+
+/* دکمه حذف */
+
+.cart-remove {
+background: #dc243c;
+color: white;
+
+border: none;
+border-radius: 4px;
+
+padding: 9px 22px;
+
+font-size: 14px;
+cursor: pointer;
+
+display: block;
+margin: auto;
+}
+
+.cart-remove:hover {
+background: #b91d31;
+}
+
+/* قیمت نهایی */
+
+.cart_total-price {
+width: 90%;
+margin: 30px auto 0;
+
+text-align: left;
+
+font-size: 20px;
+font-weight: bold;
+color: #4b2595;
+}
+
+.products-container {
+display: grid;
+grid-template-columns: repeat(4, minmax(0,1fr));
+gap: 20px;
+width: 100%;
+}
+.products-container .products{
+  display: block;
+  min-width: 0;
+}
+
+.products {
+width: 90%;
+max-width: 1200px;
+margin: 80px auto;
+}
+
+.products-header {
+  
+ display: flex;
+ 
+justify-content:center;
+align-items: center;
+margin-bottom: 30px; 
+}
+
+
+
+.slider-buttons {
+display: flex;
+gap: 10px;
+}
+
+.slider-buttons button {
+width: 45px;
+height: 45px;
+border: none;
+border-radius: 50%;
+background: #4b2e2e;
+color: white;
+font-size: 20px;
+cursor: pointer;
+transition: 0.3s;
+}
+
+.slider-buttons button:hover {
+background: #8b5e3c;
+}
+
+
+
+.product {
+background: white;
+border-radius: 15px;
+padding: 15px;
+box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+transition: 0.3s;
+}
+
+.product:hover {
+transform: translateY(-5px);
+}
+
+.product img {
+width: 100%;
+height: 200px;
+object-fit: cover;
+border-radius: 12px;
+}
+
+.product h3 {
+margin-top: 15px;
+color: #4b2e2e;
+font-size: 20px;
+}
+
+.product p {
+margin: 8px 0;
+color: #777;
+}
+
+.product span {
+color: #b06b3c;
+font-weight: bold;
+}
+
+.product-image {
+position: relative;
+}
+
+.product-image img {
+width: 100%;
+height: 200px;
+object-fit: cover;
+border-radius: 12px;
+display: block;
+}
+
+.product-icons {
+position: absolute;
+top: 12px;
+right: 12px;
+
+display: flex;
+flex-direction: column;
+gap: 8px;
+}
+
+.product-icons button {
+width: 940px;
+height: 40px;
+
+border: none;
+border-radius: 50%;
+
+background: rgb(237, 178, 178);
+cursor: pointer;
+
+display: flex;
+justify-content: center;
+align-items: center;
+
+font-size: 19px;
+
+box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
+
+transition: 0.3s;
+}
+
+.product-icons button:hover {
+transform: scale(1.1);
+}
+
+
+.heart-btn {
+color: #cb0414;
+width: 30px;
+height: 40px;
+border: 1px solid #691a20;
+border-radius: 30px;
+}
+
+.cart-btn {
+color: #5a0e0e;
+width: 30px;
+height: 30px;
+border: 1px solid #691a20;
+border-radius: 40px;
+}

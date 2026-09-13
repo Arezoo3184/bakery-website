@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+
+
+
+.auth-section {
+min-height: 100vh;
+display: flex;
+justify-content: center;
+align-items: center;
+background-image: url(../image/log4.jpg);
+background-size: cover;
+background-position: center;
+background-repeat: no-repeat;
+}
+
+.auth-box {
+width: 350px;
+height: 400px;
+padding: 30px;
+border-radius: 15px;
+background: #85421f;
+
+box-shadow: 0 5px 25px rgba(0, 0, 0, 0.15);
+text-align: center;
+}
+#authTitle{
+    color: aliceblue;
+}
+#switchText{
+    color: white;
+    font-size: 18px;
+   
+}
+
+.auth-box h2 {
+margin-bottom: 25px;
+}
+
+.auth-box input {
+width: 100%;
+padding: 13px;
+margin-bottom: 15px;
+border: 1px solid #ddd;
+border-radius: 8px;
+outline: none;
+box-sizing: border-box;
+}
+
+.auth-box input:focus {
+border-color: #c58b5b;
+}
+
+.auth-box button {
+width: 100%;
+padding: 13px;
+border: none;
+border-radius: 18px;
+background: #721c1c;
+color: white;
+cursor: pointer;
+font-size: 16px;
+}
+
+.auth-box button:hover {
+opacity: 0.85;
+}
+
+#authMessage {
+margin-top: 15px;
+font-size: 14px;
+}
+
+.switch-btn {
+width: auto ;
+padding: 0 ;
+background: none;
+color: #c58b5b;
+font-size: 14px ;
+}
+
+.user-section {
+text-align: center;
+padding: 60px 20px;
+
+}
+
+.user-section button {
+padding: 12px 25px;
+border: none;
+border-radius: 8px;
+background: #c58b5b;
+color: white;
+cursor: pointer;
+}
+    </style>
+
+
+
+<section class="auth-section" id="authSection">
+
+<div class="auth-box">
+
+<h2 id="authTitle">ورود به حساب</h2>
+
+
+
+<!-- Register Name -->
+<input
+type="text"
+id="nameInput"
+placeholder="نام شما"
+style="display: none;"
+>
+
+<input
+type="email"
+id="emailInput"
+placeholder="ایمیل"
+>
+
+<input
+type="password"
+id="passwordInput"
+placeholder="رمز عبور"
+>
+
+<button id="authBtn">ورود</button>
+
+<p id="authMessage"></p>
+
+<p>
+<span id="switchText">حساب ندارید؟</span>
+<button id="switchBtn" class="switch-btn">
+ثبت نام
+</button>
+</p>
+
+</div>
+
+</section>
+
+<!-- User Box -->
+<section class="user-section" id="userSection" style="display: none;">
+
+<h2>
+سلام
+<span id="userName"></span> 👋
+</h2>
+
+<p>خوش آمدید به سایت ما ❤️</p>
+
+<button id="logoutBtn">
+خروج از حساب
+</button>
+
+</section>
+
+    <script src="./login.js"></script>
+</body>
+</html>
+
+</div>
